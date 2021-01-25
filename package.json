@@ -31,6 +31,7 @@
     "@ckeditor/ckeditor5-build-balloon": "^24.0.0",
     "@ckeditor/ckeditor5-build-balloon-block": "^24.0.0",
     "@ckeditor/ckeditor5-build-classic": "^24.0.0",
+    "@ckeditor/ckeditor5-build-classic-1aria": "^24.0.0",
     "@ckeditor/ckeditor5-build-decoupled-document": "^24.0.0",
     "@ckeditor/ckeditor5-build-inline": "^24.0.0",
     "@ckeditor/ckeditor5-ckfinder": "^24.0.0",
