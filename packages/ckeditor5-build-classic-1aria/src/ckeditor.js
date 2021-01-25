@@ -30,6 +30,9 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import Font from '@ckeditor/ckeditor5-font/src/font';
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
+import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough.js';
+import TodoList from '@ckeditor/ckeditor5-list/src/todolist';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -58,7 +61,10 @@ ClassicEditor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	TextTransformation,
-	Font
+	Font,
+	Underline,
+	Strikethrough,
+	TodoList,
 ];
 
 // Editor configuration.
@@ -89,9 +95,13 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'bold',
 			'italic',
+			'underline',
+			'strikethrough',
 			'link',
+			'|',
 			'bulletedList',
 			'numberedList',
+			'todoList',
 			'|',
 			'indent',
 			'outdent',
@@ -103,8 +113,10 @@ ClassicEditor.defaultConfig = {
 			'undo',
 			'redo',
 			'|',
-			'fontFamily', 'fontSize', 'fontColor', 'fontBackgroundColor', 
-			
+			'fontFamily',
+			'fontSize',
+			'fontColor',
+			'fontBackgroundColor',
 		]
 	},
 	image: {
